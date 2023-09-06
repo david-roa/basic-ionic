@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-title>
+            Tab 1
+        </ion-title>
+        <ion-button (click)="exit()">
+            <ion-icon name="star" slot="start"></ion-icon>
+            Sign Out
+        </ion-button>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <ion-header collapse="condense">
+        <ion-toolbar>
+            <ion-title size="large">Tab 1</ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+    <app-explore-container [name]="data"></app-explore-container>
+
+    <ion-button (click)="event()">
+        <ion-icon name="star" slot="start"></ion-icon>
+        Left Icon
+    </ion-button>
+</ion-content>
